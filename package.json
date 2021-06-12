@@ -1,0 +1,18 @@
+{
+  "name": "pizza-delicious-api",
+  "version": "1.0.0",
+  "description": "API pizza delicious",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha --reporter spec",
+    "dev": "nodemon index -e js,tpl"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  }
+}
