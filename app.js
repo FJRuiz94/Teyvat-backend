@@ -8,6 +8,7 @@ const cors = require("cors");
 //middlewares con las rutas
 const charactersController = require('./controllers/CharactersController')
 const indexController = require('./controllers/indexController')
+const buildsController = require('./controllers/BuildsController')
 
 //server instance
 const app = express()
@@ -20,6 +21,7 @@ app.use(express.json())
 
 //enganchamos los controladores de los diferentes recursos
 app.use(charactersController)
+app.use(buildsController)
 app.use(indexController)
 
 database.connect()
