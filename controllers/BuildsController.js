@@ -41,11 +41,10 @@ router.route('/builds/:title')
 router.route('/builds/newBuild')
   .post(async(req,res) => {
     try{
-      const searchParams = {
-        title: req.params.title
-      }
+      
+      let build = req.body
 
-      const newBuild = await new Build(searchParams).save()
+      const newBuild = await new Build(build).save()
 
       res.status(201).json(newBuild)
     } catch (error){

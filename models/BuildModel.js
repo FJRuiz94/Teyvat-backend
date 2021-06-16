@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const BuildSchema = mongoose.Schema({
-  title: { type: String, required: true},
+  title: { type: String},
   main: { type: String},
   member1: {type: String},
   member2: {type: String},
